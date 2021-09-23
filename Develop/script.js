@@ -4,14 +4,18 @@ var validNumber = [];
 // In this variable I'm saving the random number of the password
 var finalPassword = '';
 
-// Assignment Code
+// Bring the #generate id and #password id from html
 var generateBtn = document.querySelector("#generate");
 var passwordText = document.querySelector("#password");
 
+passwordText.value = 'Your Secure Password';
+
 // Write password to the #password input
 function writePassword() {
+
+// Cleaning the variable passwork to not concat if you generate the password again
+  finalPassword = '';
   var password = generatePassword();
-  passwordText.value = '';
   passwordText.value = finalPassword;
 }
 
