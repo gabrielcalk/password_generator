@@ -1,31 +1,28 @@
 // In this array I am saving the character that user want to use on the password 
-var validNumber = []
+var validNumber = [];
 
 // In this variable I'm saving the random number of the password
-var finalPassword = ''
+var finalPassword = '';
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var passwordText = document.querySelector("#password");
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  passwordText.value = '';
+  passwordText.value = finalPassword;
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
 // This is the function that is generating the random password
 function generatePassword(){
 
-
 // Asking how many character the user want on the password 
   var passwordLength = parseInt(prompt("How many characters do you want?"));
-
 
 // If the value is not a number, then repeat the function that is generating the random password 
   if (isNaN(passwordLength)) {
@@ -76,12 +73,17 @@ function generatePassword(){
   }
 
 //Generating random values ​​that are within the array of valid numbers. The password length will be the same as what the user requested
+  var password = '';
+
   for(var i = 0; i < passwordLength; i++){
-    var random = Math.floor(Math.random() * validNumber.length);
-    finalPassword = finalPassword + random;
+
+    finalPassword = finalPassword + validNumber[Math.floor(Math.random() * validNumber.length)];
+    // var random = validNumber.charAt(Math.random() * validNumber.length);
+    // finalPassword.push(random)
   }
+  return finalPassword
 }
 
-
+// checkout .charAt method (validNumber.charAt)
 console.log(validNumber)
 console.log(finalPassword)
