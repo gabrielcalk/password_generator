@@ -1,16 +1,21 @@
 # password_generator
 
+LINK: https://gabrielcalk.github.io/password_generator/
+
 ## *Table of Contents*
 - [Description](#description)
 - [Authors](#authors)
 - [Technologies](#technologies)
 - [Screenshots](#screenshots)
-- [Link](#link)
 
 
 ## *Description*
 
-This program was created to generate a random password for users. The user is offered 5 options: the first option is to define how many characters the user wants in the password, the second option is whether he wants a number or not, the third option is whether he wants special characters, the fourth is whether he wants to add characters with uppercase and the fifth is whether he wants lowercase characters in his random password.
+This program was created to generate a random password for users.
+
+The user is offered 5 options: the first option is to define how many characters the user wants in the password, the second option is whether he wants a number or not, the third option is whether he wants special characters, the fourth is whether he wants to add characters with uppercase and the fifth is whether he wants lowercase characters in his random password.
+
+The password will be generated according to the user's requirements and wishes.
 
 
 ## *Authors*
@@ -44,7 +49,4 @@ The project is divided in 4 parts:
 4) Part 4: generate the random password with the options that the user choose
 -> ![image](https://user-images.githubusercontent.com/89816900/134597843-2e0e0407-8a43-4ed2-9b45-3f70e07b03ec.png)
 
-
-## *Link*
-LINK OF THE PROGRAMMING: https://gabrielcalk.github.io/password_generator/
 
